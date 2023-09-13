@@ -1,3 +1,4 @@
+require("pg")
 var server = require("./src/server")
 var {sequelize} = require("./src/db");
 const { backURL } = require("./src/config");

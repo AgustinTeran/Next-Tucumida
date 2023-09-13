@@ -1,4 +1,4 @@
-const backURL = "http://localhost:3001"
+const backURL = "https://next-tucumida.vercel.app"
 
 
 module.exports = {
