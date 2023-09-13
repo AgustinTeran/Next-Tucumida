@@ -1,6 +1,6 @@
 import axios from "axios";
 
-export const baseURL = "http://localhost:3001"
+export const baseURL = "https://next-tucumida.vercel.app"
 
 export var back = axios.create({
   baseURL
