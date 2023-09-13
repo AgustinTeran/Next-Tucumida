@@ -3,28 +3,28 @@ var {Sequelize,Op} = require("sequelize")
 
 
 
-var {DB_USER, DB_HOST, DB_PASSWORD, DB_DATABASE}  = process.env
-var sequelize = new Sequelize(`postgres://${DB_USER}:${DB_PASSWORD}@${DB_HOST}:5432/${DB_DATABASE}`,{logging:false})
+// var {DB_USER, DB_HOST, DB_PASSWORD, DB_DATABASE}  = process.env
+// var sequelize = new Sequelize(`postgres://${DB_USER}:${DB_PASSWORD}@${DB_HOST}:5432/${DB_DATABASE}`,{logging:false})
 
 
-// var {POSTGRES_USER, POSTGRES_HOST, POSTGRES_PASSWORD, POSTGRES_DATABASE}  = process.env
-// var sequelize = new Sequelize({
-//     database: `${POSTGRES_DATABASE}`,
-//     dialect: "postgres",
-//     host: `${POSTGRES_HOST || "localhost"}`,
-//     port: "5432",
-//     username: `${POSTGRES_USER}`,
-//     password: `${POSTGRES_PASSWORD}`,
-//     logging: false,
-//     dialectOptions: {
-//       ssl: {
-//         require: true,
-//         rejectUnauthorized: false,
-//       },
-//       keepAlive: true,
-//     },
-//     ssl: true,
-//   })
+var {POSTGRES_USER, POSTGRES_HOST, POSTGRES_PASSWORD, POSTGRES_DATABASE}  = process.env
+var sequelize = new Sequelize({
+    database: `${POSTGRES_DATABASE}`,
+    dialect: "postgres",
+    host: `${POSTGRES_HOST || "localhost"}`,
+    port: "5432",
+    username: `${POSTGRES_USER}`,
+    password: `${POSTGRES_PASSWORD}`,
+    logging: false,
+    dialectOptions: {
+      ssl: {
+        require: true,
+        rejectUnauthorized: false,
+      },
+      keepAlive: true,
+    },
+    ssl: true,
+  })
 
 
   // Inicializo los modelos
