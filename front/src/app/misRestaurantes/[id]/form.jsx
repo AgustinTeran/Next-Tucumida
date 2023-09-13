@@ -49,7 +49,7 @@ export default function AddOrModifyForm({restaurante,categorias}){
       var preRestaurante = {
         ...values,
         categorias: categoriasSelected.map(e => e.value),
-        imagen: linkImagen.data.imagen || values.imagen
+        imagen: linkImagen?.data.imagen || values.imagen
       }
 
       dispatch(restaurantesActions.postOrPut(preRestaurante))
