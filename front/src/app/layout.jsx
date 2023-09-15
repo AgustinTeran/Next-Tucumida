@@ -7,6 +7,8 @@ import {cookies} from "next/headers"
 import BigLoader from '@/components/commons/bigLoader'
 import Main from '@/components/layout/Main'
 
+import 'react-toastify/dist/ReactToastify.css';
+
 function getUser(){
   var token = cookies().get("token")?.value
 

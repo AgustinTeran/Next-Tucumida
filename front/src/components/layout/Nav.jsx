@@ -8,6 +8,8 @@ import { FaArrowUpFromBracket } from "react-icons/fa6"
 import { FiLogOut } from "react-icons/fi"
 import { useSelector } from "react-redux";
 import { PiStorefront } from "react-icons/pi";
+import { ToastContainer } from "../../config/notify";
+
 
 
 
@@ -30,6 +32,8 @@ export default function Nav({user}){
 
  if(!user || user.error){
   return (
+    <>
+      <ToastContainer/>
     <nav data-theme={appConfig.theme} className="flex z-30 px-3 items-center fixed w-full justify-between h-20 bg-primary">
       <Link href={"/"} className="text-2xl text-white cursor-pointer hover:text-yellow-500">
         Tucumida
@@ -51,6 +55,7 @@ export default function Nav({user}){
           </label>
         </label>
     </nav>
+    </>
   )
  }
   return (
