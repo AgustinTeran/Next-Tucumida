@@ -3,8 +3,8 @@ export default function robots() {
     rules: {
       userAgent: '*',
       allow: '/',
-      disallow: '/misRestaurantes',
+      disallow: '/misRestaurantes/',
     },
-    // sitemap: 'https://acme.com/sitemap.xml',
+    sitemap: 'https://tucumida.com.ar/public/sitemap.xml',
   }
 }
