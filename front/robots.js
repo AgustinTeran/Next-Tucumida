@@ -5,6 +5,6 @@ export default function robots() {
       allow: '/',
       disallow: '/misRestaurantes',
     },
-    sitemap: 'https://acme.com/sitemap.xml',
+    // sitemap: 'https://acme.com/sitemap.xml',
   }
 }
