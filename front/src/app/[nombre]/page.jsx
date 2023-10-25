@@ -16,7 +16,8 @@ function searchRestaurantes(nombre){
 
 export function generateMetadata({params}){
   return {
-    title: `${decodeURIComponent(capitalizeString(params.nombre))} | Tucumida`,
+    title: `${decodeURIComponent(capitalizeString(params.nombre))}`,
+    description: `Encuentra ${params.nombre} y los mejores restaurantes de tucumida en Tucumida`,
     robots: {
       index: true,
       follow: true,
