@@ -26,7 +26,12 @@ export async function generateMetadata({params}){
 
   return {
     title: `${capitalizeString(restaurante?.nombre)}`,
-    description: `${restaurante?.nombre}, ${restaurante?.ubicacion?.calle}, ${restaurante?.ubicacion?.departamento}`
+    description: `${restaurante?.nombre}, ${restaurante?.ubicacion?.calle}, ${restaurante?.ubicacion?.departamento}`,
+    robots: {
+      index: true,
+      follow: true,
+      nocache: false,
+    },
   }
 }
 

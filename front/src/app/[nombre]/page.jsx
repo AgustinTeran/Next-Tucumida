@@ -16,7 +16,12 @@ function searchRestaurantes(nombre){
 
 export function generateMetadata({params}){
   return {
-    title: `${decodeURIComponent(capitalizeString(params.nombre))} | Tucumida`
+    title: `${decodeURIComponent(capitalizeString(params.nombre))} | Tucumida`,
+    robots: {
+      index: true,
+      follow: true,
+      nocache: false,
+    },
   }
 }
 

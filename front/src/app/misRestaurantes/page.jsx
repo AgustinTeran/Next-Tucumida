@@ -7,6 +7,14 @@ import { useDispatch, useSelector } from "react-redux";
 import restaurantesActions from "@/redux/restaurants/actions"
 import Loader from "@/components/commons/loader";
 
+export const metadata = {
+  robots: {
+    index: false,
+    follow: true,
+    nocache: true,
+  },
+}
+
 
 
 export default function MisRestaurantes(){

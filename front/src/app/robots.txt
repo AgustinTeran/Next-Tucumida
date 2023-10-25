@@ -1,0 +1,5 @@
+User-Agent: *
+Allow: /
+Disallow: /misRestaunrantes/
+
+Sitemap: https://acme.com/sitemap.xml

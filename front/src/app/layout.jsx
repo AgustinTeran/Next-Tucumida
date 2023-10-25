@@ -26,6 +26,11 @@ export const metadata = {
   title: 'Tucumida | Restaurantes de Tucumán',
   description: 'Encuentra el mejor lugar para comer en Tucumán. ',
   keywords: ["sandwicherias tucuman","empanadas tucuman","pizzas tucuman","donde comer","restaurantes","sangucheria tucuman"],
+  robots: {
+    index: true,
+    follow: true,
+    nocache: false,
+  },
 }
 
 export default async function RootLayout({ children }) {
