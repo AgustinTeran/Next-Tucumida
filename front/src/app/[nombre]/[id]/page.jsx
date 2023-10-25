@@ -53,7 +53,7 @@ export default async function Restaurante({params}){
         restaurante.nombre && (
           <>
             <div> 
-              <h3 className="text-3xl mt-4 mb-10 flex ites-center capitalize gap-1"><GoBackButton/>{restaurante.nombre}</h3>
+              <h1 className="text-3xl mt-4 mb-10 flex ites-center capitalize gap-1"><GoBackButton/>{restaurante.nombre}</h1>
               <div className="flex gap-7 flex-wrap justify-center">
                 <img className="w-72 border-gray-400 border-2 bg-base-300 h-52 min-h-8 rounded-md object-scale-down" src={restaurante.imagen} alt={restaurante.nombre} />
                 <div className="flex flex-col py-4 gap-4">
