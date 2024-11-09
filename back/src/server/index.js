@@ -6,7 +6,7 @@ server.use(express.json())
 
 const cors = require("cors")
 server.use(cors({
-  origin: ["https://tucumida.com.ar","http://localhost:3000"],
+  origin: ["https://next-tucumida-kappa.vercel.app"],
   credentials: true
 }))
 
